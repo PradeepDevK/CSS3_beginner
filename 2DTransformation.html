@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 75px;
+            background-color: #1FA67A;
+            border: 1px solid black;
+            color: #FFFFFF;
+        }
+
+        div.translate {
+            -ms-transform: translate(50px, 75px);
+            /* IE 9 */
+            -webkit-transform: translate(50px, 75px);
+            /* Chrome, Safari, Opera */
+            transform: translate(50px, 75px);
+        }
+
+        div.rotate {
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(45deg);
+        }
+
+        div.scale {
+            -ms-transform: scale(2, 4);
+            /* IE 9 */
+            -webkit-transform: scale(2, 4);
+            /* Chrome, Safari, Opera */
+            transform: scale(2, 4);
+            left: 200px;
+            top: 30px;
+            position: relative;
+        }
+
+        div.skew {
+            -ms-transform: skew(25deg, 45deg);
+            /* IE 9 */
+            -webkit-transform: skew(25deg, 45deg);
+            /* Chrome, Safari, Opera */
+            transform: skew(25deg, 45deg);
+        }
+
+        div.matrix {
+            -ms-transform: matrix(0.755, 0.6, -0.6, 0.966, 0, 0);
+            /* IE 9 */
+            -webkit-transform: matrix(0.755, 0.6, -0.6, 0.966, 0, 0);
+            /* Chrome, Safari, Opera */
+            transform: matrix(0.755, 0.6, -0.6, 0.966, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hello. I m a normal DIV !!!</div>
+    <div class="translate">Hello. I m a translate DIV !!!</div>
+    <div class="rotate">Hello. I m a rotate DIV !!!</div>
+    <div class="scale">Hello. I m a scale DIV !!!</div>
+    <div class="skew">Hello. I m a skew DIV !!!</div>
+    <div class="matrix">Hello. I m a matrix DIV !!!</div>
+</body>
+
+</html>
