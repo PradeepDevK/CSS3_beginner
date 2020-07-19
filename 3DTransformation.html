@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 75px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        div#rotateX {
+            -webkit-transform: rotateX(145deg);
+            /* For Chrome, Safari, Opera */
+            transform: rotateX(145deg);
+            /* Standard syntax */
+        }
+
+        div#rotateY {
+            -webkit-transform: rotateY(145deg);
+            /* For Chrome, Safari, Opera */
+            transform: rotateY(145deg);
+            /* Standard syntax */
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hello. This is a main DIV element.</div>
+    <div id="rotateX">Hello. This is a RotateX DIV element.</div>
+    <div id="rotateY">Hello. This is a RotateY DIV element.</div>
+    <p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateX method.</p>
+</body>
+
+</html>
