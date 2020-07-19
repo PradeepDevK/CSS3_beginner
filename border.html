@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.borderRadius {
+            border: 2px solid #a1a1a1;
+            padding: 10px 40px;
+            background: #dddddd;
+            width: 300px;
+            border-radius: 25px;
+        }
+
+        div.boxShadow {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            box-shadow: 10px 10px 5px #888888;
+        }
+
+        div.borderImage {
+            border: 15px solid transparent;
+            width: 250px;
+            padding: 10px 20px;
+        }
+
+        #round {
+            -webkit-border-image: url(borderImage.png) 30 30 round;
+            /* Safari 3.1-5 */
+            -o-border-image: url(borderImage.png) 30 30 round;
+            /* Opera 11-12.1 */
+            border-image: url(borderImage.png) 30 30 round;
+        }
+
+        #stretch {
+            -webkit-border-image: url(borderImage.png) 30 30 stretch;
+            /* Safari 3.1-5 */
+            -o-border-image: url(borderImage.png) 30 30 stretch;
+            /* Opera 11-12.1 */
+            border-image: url(borderImage.png) 30 30 stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxShadow"></div>
+    <div class="borderRadius"></div>
+    <div class="borderImage" id="round"></div>
+    <div class="borderImage" id="stretch"></div>
+</body>
+
+</html>

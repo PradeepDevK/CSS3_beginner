@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #grad-style-top {
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(#1FA67A, #FFFFFF);
+            /* Standard syntax */
+            background: -webkit-linear-gradient(#1FA67A, #FFFFFF);
+            /* For Safari 5.1 to 6.0 */
+            background: -moz-linear-gradient(#1FA67A, #FFFFFF);
+            /* For Firefox 3.6 to 15 */
+            background: -o-linear-gradient(#1FA67A, #FFFFFF);
+            /* For Opera 11.1 to 12.0 */
+        }
+
+        #grad-style-left {
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(to right, #1FA67A, #FFFFFF);
+            /* Standard syntax */
+            background: -webkit-linear-gradient(left, #1FA67A, #FFFFFF);
+            /* For Safari 5.1 to 6.0 */
+            background: -moz-linear-gradient(right, #1FA67A, #FFFFFF);
+            /* For Firefox 3.6 to 15 */
+            background: -o-linear-gradient(right, #1FA67A, #FFFFFF);
+            /* For Opera 11.1 to 12.0 */
+        }
+
+        #grad-style-diagonal {
+            height: 400px;
+            width: 100%;
+            background: linear-gradient(to bottom right, #1FA67A, #FFFFFF);
+            /* Standard syntax */
+            background: -webkit-linear-gradient(left top, #1FA67A, #FFFFFF);
+            /* For Safari 5.1 to 6.0 */
+            background: -moz-linear-gradient(bottom right, #1FA67A, #FFFFFF);
+            /* For Firefox 3.6 to 15 */
+            background: -o-linear-gradient(bottom right, #1FA67A, #FFFFFF);
+            /* For Opera 11.1 to 12.0 */
+        }
+
+        #grad-style-even-rad {
+            height: 200px;
+            width: 100%;
+            background: radial-gradient(#1FA67A, #FFFFFF, #3a5795);
+            /* Standard syntax */
+            background: -webkit-radial-gradient(#1FA67A, #FFFFFF, #3a5795);
+            /* Safari 5.1 to 6.0 */
+            background: -moz-radial-gradient(#1FA67A, #FFFFFF, #3a5795);
+            /* For Firefox 3.6 to 15 */
+            background: -o-radial-gradient(#1FA67A, #FFFFFF, #3a5795);
+            /* For Opera 11.6 to 12.0 */
+        }
+
+        #grad-style-diff-rad {
+            height: 200px;
+            width: 100%;
+            background: radial-gradient(#1FA67A 10%, #FFFFFF 20%, #3a5795 35%);
+            /* Standard syntax */
+            background: -webkit-radial-gradient(#1FA67A 10%, #FFFFFF 20%, #3a5795 35%);
+            /* Safari 5.1 to 6.0 */
+            background: -moz-radial-gradient(#1FA67A 10%, #FFFFFF 20%, #3a5795 35%);
+            /* For Firefox 3.6 to 15 */
+            background: -o-radial-gradient(#1FA67A 10%, #FFFFFF 20%, #3a5795 35%);
+            /* For Opera 11.6 to 12.0 */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Linear Gradient - ( Top to Bottom )</h3>
+    <div id="grad-style-top"></div>
+    <h3>Linear Gradient - ( Left to Right )</h3>
+    <div id="grad-style-left"></div>
+    <h3>Linear Gradient - ( Diagonal )</h3>
+    <div id="grad-style-diagonal"></div>
+    <h3>Radial Gradient - ( Evenly Spaced Color Stops )</h3>
+    <div id="grad-style-even-rad"></div>
+    <h3>Radial Gradient - ( Different Spaced Color Stops )</h3>
+    <div id="grad-style-diff-rad"></div>
+    <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+</body>
+
+</html>

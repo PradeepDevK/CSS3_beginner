@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.backgroundSize {
+            background: url(backImg.png);
+            background-size: 80px 60px;
+            background-repeat: no-repeat;
+            padding-top: 40px;
+        }
+
+        div.backgroundOrigin {
+            border: 1px solid black;
+            padding: 35px;
+            background-image: url('https://cdn.shortpixel.ai/client/q_glossy,ret_img/backImg1.png');
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+        div.borderBox {
+            background-origin: border-box;
+        }
+
+        div.contentBox {
+            background-origin: content-box;
+        }
+
+        div.multipleBackground {
+            background: url(backImg.png), url(backImg1.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backgroundSize">
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </p>
+        <p>Original image: <img src="backImg.png" alt="post" width="150" height="150"></p>
+    </div>
+
+
+    <p>background-origin:border-box:</p>
+    <div class="backgroundOrigin borderBox">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+    </div>
+    <p>background-origin:content-box:</p>
+    <div class="backgroundOrigin contentBox">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+    </div>
+
+    <div class="multipleBackground">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+            feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+            delenit augue duis dolore te feugait nulla facilisi.</p>
+    </div>
+
+</body>
+
+</html>
