@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.resize {
+            border: 2px solid;
+            padding: 10px 40px;
+            width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+
+        div.container {
+            width: 30em;
+            border: 1em solid;
+        }
+
+        div.box {
+            -moz-box-sizing: border-box;
+            /* Firefox */
+            box-sizing: border-box;
+            width: 50%;
+            border: 1em solid #1FA67A;
+            float: left;
+        }
+
+        div.outline {
+            margin: 20px;
+            width: 150px;
+            padding: 10px;
+            height: 70px;
+            border: 2px solid black;
+            outline: 2px solid #1FA67A;
+            outline-offset: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resize">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius
+        blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <p><b>Note:</b> Internet Explorer and Opera do not support the resize property.</p>
+    <div class="container">
+        <div class="box">This is left half div.</div>
+        <div class="box">This is right half div.</div>
+    </div>
+    <div class="outline">This div has an outline border 15px outside the border edge.</div>
+    <p><b>Note:</b> Internet Explorer does not support the outline-offset property.</p>
+</body>
+
+</html>

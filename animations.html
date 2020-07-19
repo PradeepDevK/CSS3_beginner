@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.animate {
+            -webkit-animation: testanimate 10s;
+            /* Chrome, Safari, Opera */
+            animation: testanimate 10s;
+        }
+
+        @keyframes testanimate {
+
+            /* Standard syntax */
+            from {
+                background: #1FA67A;
+            }
+
+            to {
+                background: #000000;
+            }
+        }
+
+        @-webkit-keyframes testanimate {
+
+            /* For Chrome, Safari, Opera */
+            from {
+                background: #1FA67A;
+            }
+
+            to {
+                background: #000000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animate"></div>
+    <p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+</body>
+
+</html>
